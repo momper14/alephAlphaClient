@@ -4,9 +4,11 @@ aa_available_models <- function(token) {
     paste0(base_url, "/models_available"),
     httr::add_headers(
       Accept = "application/json",
-      Authorization = sprintf("Bearer %s", token)
+      Authorization = paste("Bearer", token)
     )
   )
+
+  stop_for_status(resp)
 
   return(httr::content(resp))
 }
