@@ -32,7 +32,7 @@ aa_embed <- function(token,
     encode = "json"
   )
 
-  stop_for_status(resp)
+  httr::stop_for_status(resp)
 
   return(httr::content(resp))
 }
