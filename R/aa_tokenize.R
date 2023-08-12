@@ -17,7 +17,7 @@ aa_tokenize <- function(token, model, prompt, tokens, token_ids) {
     encode = "json"
   )
 
-  stop_for_status(resp)
+  httr::stop_for_status(resp)
 
   return(httr::content(resp))
 }
