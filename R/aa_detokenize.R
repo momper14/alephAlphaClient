@@ -13,7 +13,7 @@ aa_detokenize <- function(token, model, token_ids) {
     encode = "json"
   )
 
-  stop_for_status(resp)
+  httr::stop_for_status(resp)
 
   return(httr::content(resp))
 }
