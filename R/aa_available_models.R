@@ -8,7 +8,7 @@ aa_available_models <- function(token) {
     )
   )
 
-  stop_for_status(resp)
+  httr::stop_for_status(resp)
 
   return(httr::content(resp))
 }
