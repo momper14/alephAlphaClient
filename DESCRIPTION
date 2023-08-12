@@ -3,7 +3,7 @@ Type: Package
 Title: A client for the Aleph Alpha API
 Version: 0.1.0
 Author: Moritz Momper
-Maintainer: Moritz Momper
+Maintainer: Moritz Momper <wont.fill@this.com>
 Description: A client for the Aleph Alpha API
 License: What license is it under?
 Encoding: UTF-8
